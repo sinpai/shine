@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.5.5
--- Dumped by pg_dump version 9.5.5
+-- Dumped from database version 9.5.7
+-- Dumped by pg_dump version 9.5.7
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -251,6 +251,11 @@ CREATE UNIQUE INDEX index_users_on_reset_password_token ON users USING btree (re
 
 SET search_path TO "$user", public;
 
-INSERT INTO schema_migrations (version) VALUES ('20161107063305'), ('20161107213225'), ('20161110201226'), ('20161110222331'), ('20161113091127');
+INSERT INTO "schema_migrations" (version) VALUES
+('20161107063305'),
+('20161107213225'),
+('20161110201226'),
+('20161110222331'),
+('20161113091127');
 
 
